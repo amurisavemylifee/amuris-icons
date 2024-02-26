@@ -1,5 +1,8 @@
 import fsp from "fs/promises";
 import * as path from "path";
+import * as packageJson from "../package.json";
+
+const version = packageJson.version;
 
 async function createDistFolder() {
   await fsp.rm(path.join(__dirname, "dist"), { recursive: true, force: true });
@@ -12,6 +15,7 @@ async function createPackageJson() {
     JSON.stringify({
       name: "amuris-icons",
       displayName: "Amuris Icons",
+      version: version,
       engines: {
         vscode: "^1.86.0",
       },
