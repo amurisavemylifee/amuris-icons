@@ -1,0 +1,26 @@
+{
+  "name": "amuris-icons",
+  "displayName": "Amuris Icons",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.86.0"
+  },
+  "contributes": {
+    "iconThemes": [
+      {
+        "id": "amuris-icons",
+        "label": "Amuris Icons",
+        "path": "./out/icons.json"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "version": "npm version minor"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.86.0",
+    "@types/node": "18.x",
+    "typescript": "^5.3.3"
+  }
+}
