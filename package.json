@@ -1,7 +1,7 @@
 {
   "name": "amuris-icons",
   "displayName": "Amuris Icons",
-  "version": "0.0.1",
+  "version": "0.1.2",
   "engines": {
     "vscode": "^1.86.0"
   },
@@ -15,8 +15,7 @@
     ]
   },
   "scripts": {
-    "compile": "tsc -p ./",
-    "version": "npm version minor"
+    "compile": "tsc -p ./"
   },
   "devDependencies": {
     "@types/vscode": "^1.86.0",
